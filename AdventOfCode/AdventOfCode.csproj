@@ -51,31 +51,35 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Task1\Task1.cs" />
-    <Compile Include="Task2\Task2.cs" />
-    <Compile Include="Task3\Task3.cs" />
-    <Compile Include="Task4\Task4.cs" />
-    <Compile Include="Task8\Task8.cs" />
-    <Compile Include="Task9\Task9.cs" />
+    <Compile Include="Task01\Task1.cs" />
+    <Compile Include="Task02\Task2.cs" />
+    <Compile Include="Task03\Task3.cs" />
+    <Compile Include="Task04\Task4.cs" />
+    <Compile Include="Task08\Task8.cs" />
+    <Compile Include="Task09\Task9.cs" />
+    <Compile Include="Task10\Task10.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Task1\input.txt">
+    <Content Include="Task01\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Task2\input.txt">
+    <Content Include="Task02\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Task3\input.txt">
+    <Content Include="Task03\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Task8\input.txt">
+    <Content Include="Task08\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Task9\input.txt">
+    <Content Include="Task09\input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Task10\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

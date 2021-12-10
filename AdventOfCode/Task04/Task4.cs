@@ -13,29 +13,30 @@ namespace AdventOfCode
         {
             var testMatrix = GetInputMatrix(true);
 
-            foreach (var matrix in testMatrix)
-            {
-                Console.WriteLine("-----------------");
-                for(var index = 0; index < matrix.Length; index++)
-                {
-                    for (int i = 0; i < matrix.Length; i++)
-                    {
+            //foreach (var matrix in testMatrix)
+            //{
+            //    Console.WriteLine("-----------------");
+            //    for(var index = 0; index < matrix.Length; index++)
+            //    {
+            //        for (int i = 0; i < matrix.Length; i++)
+            //        {
 
-                    }
-                }
-            }            
+            //        }
+            //    }
+            //}            
         }
 
-        private static List<int[,]> GetInputMatrix(bool sampleInput)
+        private static List<Dictionary<int, string>> GetInputMatrix(bool sampleInput)
         {
-            var testGroups = new List<int[,]>();
+            var testGroups = new List<Dictionary<int, string>>();
             foreach (var inputGroup in GetSampleInput())
             {
+                var group = new Dictionary<int, string>();
                 if (!string.IsNullOrWhiteSpace(inputGroup))
                 {
                     var rows = inputGroup.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries)
                         .Select(x => x.Trim().Split(' '));
-                    var group = new int[rows.Count(), rows.First().Count()];
+
                     var rowIndex = 0;
                     foreach (var row in rows)
                     {
@@ -44,7 +45,14 @@ namespace AdventOfCode
                         {
                             if (!string.IsNullOrWhiteSpace(column))
                             {
-                                group[rowIndex, colIndex] = int.Parse(column);
+                                var value = int.Parse(column);
+                                if (group.TryGetValue(value, out var values))
+                                {
+                                    //values = new HashSet<string>();
+                                    throw new ArgumentNullException();
+                                }
+                                //values.Add();
+                                group[value] = $"{rowIndex}-{colIndex}";
                                 colIndex++;
                             }
                         }

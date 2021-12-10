@@ -8,10 +8,11 @@ namespace AdventOfCode
         {
             //Task1.Solve();
             //Task2.Solve();
-            //Task8.Solve();
             //Task3.Solve();
             //Task4.Solve();
-            Task9.Solve();
+            //Task8.Solve();
+            //Task9.Solve();
+            Task10.Solve();
             Console.ReadLine();
         }
     }

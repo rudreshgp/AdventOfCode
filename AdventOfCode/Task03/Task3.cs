@@ -94,7 +94,7 @@ namespace AdventOfCode
 
         private static IEnumerable<IEnumerable<int>> GetInputList()
         {
-            using (var streamReader = new StreamReader("Task3/input.txt"))
+            using (var streamReader = new StreamReader("Task03/input.txt"))
             {
                 while (!streamReader.EndOfStream)
                 {

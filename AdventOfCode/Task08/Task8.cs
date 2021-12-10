@@ -130,7 +130,7 @@ namespace AdventOfCode
 
         private static IEnumerable<string> GetNextItem()
         {
-            using (var streamReader = new StreamReader("Task8/input.txt"))
+            using (var streamReader = new StreamReader("Task08/input.txt"))
             {
                 while (!streamReader.EndOfStream)
                 {

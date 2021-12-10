@@ -125,7 +125,7 @@ namespace AdventOfCode
 
         private static List<string> GetFileInput()
         {
-            using (var streamReader = new StreamReader("Task9/input.txt"))
+            using (var streamReader = new StreamReader("Task09/input.txt"))
             {
                 return streamReader.ReadToEnd().Trim().Split('\n').ToList();
             }

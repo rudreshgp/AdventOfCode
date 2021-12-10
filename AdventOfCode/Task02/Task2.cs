@@ -96,7 +96,7 @@ namespace AdventOfCode
 
         private static IEnumerable<Position> GetNextPosition()
         {
-            using (var streamReader = new StreamReader("Task2/input.txt"))
+            using (var streamReader = new StreamReader("Task02/input.txt"))
             {
                 while (!streamReader.EndOfStream)
                 {

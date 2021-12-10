@@ -82,7 +82,7 @@ namespace AdventOfCode
         private static int[] GetInputList()
         {
             var input = new List<int>();
-            using (var streamReader = new StreamReader("Task1/input.txt"))
+            using (var streamReader = new StreamReader("Task01/input.txt"))
             {
                 while (!streamReader.EndOfStream)
                 {
