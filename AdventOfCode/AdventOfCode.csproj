@@ -58,6 +58,7 @@
     <Compile Include="Task08\Task8.cs" />
     <Compile Include="Task09\Task9.cs" />
     <Compile Include="Task10\Task10.cs" />
+    <Compile Include="Task11\Task11.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -85,6 +86,7 @@
     <Content Include="Task10\input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Task11\input.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
