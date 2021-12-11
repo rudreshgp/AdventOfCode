@@ -246,20 +246,5 @@ namespace AdventOfCode
             }
             return inputData;
         }
-
-        private static IEnumerable<string> GetFileInput()
-        {
-            using (var streamReader = new StreamReader("Task11/input.txt"))
-            {
-                while (!streamReader.EndOfStream)
-                {
-                    var line = streamReader.ReadLine();
-                    if (!string.IsNullOrWhiteSpace(line))
-                    {
-                        yield return line.Trim();
-                    }
-                }
-            }
-        }
     }
 }
